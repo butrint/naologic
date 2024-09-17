@@ -1,4 +1,3 @@
-// import { Controller, Get, Param, Patch, Body, Delete } from '@nestjs/common';
 import { Controller, Get, Param, Delete } from '@nestjs/common';
 import { ProductsService } from './products.service';
 

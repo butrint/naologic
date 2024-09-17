@@ -13,7 +13,6 @@ export const getMappedCSVToProduct = (
 ): Partial<Product> => {
   const options: Option[] = getMappedCSVToOptions(csvRow);
   const variant: Variant = getMappedCSVToVariant(csvRow, options);
-  // const categoryPath = `${}`
 
   const product: Partial<Product> = {
     docId: nanoid(),
@@ -90,8 +89,8 @@ export const getMappedCSVToVariant = (
     dimensionUom: null,
     height: null,
     width: null,
-    manufacturerItemCode: '10333101',
-    manufacturerItemId: '10325959',
+    manufacturerItemCode: csvRow.ManufacturerItemCode,
+    manufacturerItemId: csvRow.ItemID,
     packaging: csvRow.PKG,
     price,
     volume: null,

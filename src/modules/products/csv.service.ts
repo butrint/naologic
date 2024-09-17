@@ -13,7 +13,6 @@ export class CsvService {
   constructor(private productsService: ProductsService) {}
 
   async readLargeCsv(): Promise<void> {
-    // Saving to db every 1000 records for 2gb ram
     const batchSize = 1000;
     let batch: CSVResponseDTO[] = [];
 
