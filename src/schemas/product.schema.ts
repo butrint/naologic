@@ -7,7 +7,6 @@ import { Option, OptionSchema } from './option.schema';
 import { Image, ImageSchema } from './image.schema';
 import { PRODUCT_TYPE } from 'src/common/enums/product-type.enum';
 import { DOC_STATUS, DOC_TYPE } from 'src/common/enums/doc.enum';
-// import * as nanoid from 'nanoid';
 
 export type ProductDocument = HydratedDocument<Product>;
 

@@ -8,12 +8,14 @@ export class TasksService {
 
   constructor(private csvService: CsvService) {}
 
-  @Cron('7 16 * * *')
+  @Cron('30 2 * * *')
   async handleCron() {
     try {
       this.logger.log('started!');
       this.csvService.readLargeCsv();
-      this.logger.debug('Called when the current second is 45');
+      this.logger.debug(
+        'Job started reading CSV and creating/updating products!',
+      );
     } catch (e) {
       this.logger.error(e);
     }
