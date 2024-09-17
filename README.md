@@ -1,6 +1,6 @@
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Task assignment for naologic, reading from CSV and saving the records in mapped structure to mongodb
 
 ## Installation
 
